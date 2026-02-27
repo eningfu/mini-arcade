@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+body {
+  background-color: black;
+  font-family: "Silkscreen", monospace;
+}
+
+.spec-container {
+  position: relative;
+}
+
+.simon {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(2, 1fr); 
+  border-radius: 25%;
+  padding: 5px;
+  background-color: #333;
+}
+
+.click-box {
+  all: unset;  
+  display: block; 
+  box-sizing: border-box;
+  align-items: center;
+  cursor: pointer;
+  border: 2px solid #333;
+  width: 10vw;
+  aspect-ratio: 1;
+  overflow: hidden;
+  opacity: 0.5;
+}
+
+.red {
+  background: linear-gradient(#ff9999, #ff5555);
+  border-top-left-radius: 50%;
+}
+.blue {
+  background: linear-gradient(#9999ff, #5555ff);
+  border-top-right-radius: 50%;
+}
+.yellow {
+  background: linear-gradient(#ffff99, #ffff55);
+  border-bottom-left-radius: 50%;
+}
+.green {
+  background: linear-gradient(#99ff99, #55ff55);
+  border-bottom-right-radius: 50%;
+}
+
+.click-box:active {
+  opacity: 1;
+  border: 2px solid #333;
+  outline: none;
+}
+
+.click-box:hover,
+.click-box:focus {
+  border: 2px solid #333;
+  outline: none;
+}
+
+.active {
+  opacity: 1;
+}
+
+.start-simon {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  cursor: pointer;
+}
+
+.start-simon:focus,
+.start-simon:hover,
+.start-simon:active {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}

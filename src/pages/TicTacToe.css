@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+body {
+  background-color: black;
+  font-family: "Silkscreen", monospace;
+}
+
+.spec-container {
+  position: relative;
+}
+
+.ttt {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(3, 1fr); 
+  padding: 5px;
+  background-color: #333;
+}
+
+.ttt-tile {
+  all: unset;
+  width: 5vw;
+  aspect-ratio: 1;
+  border: 1px solid white;
+}
+
+.o-turn {
+  color: #ff5555;
+}
+
+.x-turn {
+  color: #5555ff;
+}
+
+.ttt-tile:hover {
+  cursor: pointer;
+}
+
+.ttt-tile:focus,
+.ttt-tile:active,
+.ttt-tile:hover {
+  border: 1px solid white;
+  outline: none;
+  box-shadow: none;
+}
