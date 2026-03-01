@@ -1,10 +1,6 @@
 import { useState, useEffect } from "react";
 
 import './Simon.css';
-import key1Sound from "../assets/key-1.wav";
-import key2Sound from "../assets/key-2.wav";
-import key3Sound from "../assets/key-3.wav";
-import key4Sound from "../assets/key-4.wav";
 import GoBack from "../components/GoBack";
 
 const squares = [
